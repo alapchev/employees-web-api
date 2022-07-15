@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees App</title>
+    <link rel="stylesheet" href="css/mvp.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <h1>Employees</h1>
+    <label for="filepicker">Choose a csv or text file</label>
+    <input type="file" id="filepicker" accept="text/csv,text/plain">
+    <button id="submitbtn">Find Employee Pairs</button>
+    <input type="checkbox" id="show-json">
+    <label for="show-json">Show JSON</label>
+
+    <div class="results">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Employee Pair</th>
+                    <th scope="col">Common Projects IDs</th>
+                    <th scope="col">Total Days Pair Has Worked Together</th>
+                </tr>
+            </thead>
+            <tbody id="results-tbody"></tbody>
+        </table>
+    </div>
+
+
+    <div class="messages"><p></p></div>
+    <textarea id="json" readonly="readonly" rows="20" cols="50"></textarea>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿body {
+    margin-left: 4px;
+}
+
+.results, .messages, #json {
+    display: none;
+}
+
+.messages {
+    color: red;
+}
+
+td {
+    text-align: center;
+}
